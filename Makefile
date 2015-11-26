@@ -1,7 +1,7 @@
 
 APP=kata-01
 
-.PHONY: init deps build clean repl test
+.PHONY: init build clean repl test
 
 
 build:
@@ -15,10 +15,8 @@ clean:
 
 init:
 	cabal sandbox init
-	cabal configure
-
-deps:
 	cabal install --only-dependencies
+	cabal configure
 
 test:
 	@dist/build/$(APP)/$(APP)

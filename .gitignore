@@ -1,0 +1,7 @@
+**/.idea/*
+**/dist/*
+**/out/*
+**/*.iml
+**/*~
+**/.cabal-sandbox
+**/cabal.sandbox.config
